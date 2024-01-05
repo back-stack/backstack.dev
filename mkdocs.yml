@@ -48,16 +48,16 @@ theme:
   palette:
   - media: "(prefers-color-scheme: light)" # Light mode
     scheme: default
-#     toggle:
-#       icon: material/lightbulb-outline
-#       name: Switch to light mode
-#   - media: "(prefers-color-scheme: dark)" # Dark mode
-#     scheme: slate
-#     primary: light blue
-#     accent: indigo
-#     toggle:
-#       icon: material/lightbulb
-#       name: Switch to dark mode
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: dark)" # Dark mode
+    scheme: slate
+    primary: light blue
+    accent: indigo
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
 
 plugins:
 - search
@@ -101,4 +101,5 @@ markdown_extensions:
 nav:
 - Introduction:
     - index.md
+    - Quickstart: install.md
     - Architecture: arch.md
