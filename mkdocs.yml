@@ -22,9 +22,9 @@ strict: true
 # - static/extra.css
 
 # version
-# extra:
-#   version:
-#     provider: mike
+extra:
+  version:
+    provider: mike
 
 theme:
   name: material
@@ -101,8 +101,9 @@ markdown_extensions:
 - footnotes
 
 nav:
+- Home: index.md
 - Introduction:
-    - index.md
+    - intro.md
     - Quickstart: install.md
     - Architecture: arch.md
 - Quickstart: install.md
