@@ -8,11 +8,13 @@ For a local install, you need Docker and Kind pre-installed.
 
 ## Getting started
 
--  Fork and clone the `showcase` repository
+Fork and clone the `showcase` repository
 
-  ```sh
-  git clone git@github.com:back-stack/showcase.git
-  ```
+```sh
+git clone git@github.com:back-stack/showcase.git
+```
+
+## Setup Variables
 
 -  [Create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
 -  Configure `./.env` with your personal access token, the repository url, the vault token, your [provider-azure credentials](https://marketplace.upbound.io/providers/upbound/provider-family-azure/v0.38.2/docs/configuration), and your [provider-aws credentials](https://marketplace.upbound.io/providers/upbound/provider-family-aws/v0.43.1/docs/configuration)
@@ -27,8 +29,8 @@ For a local install, you need Docker and Kind pre-installed.
   AWS_SESSION_TOKEN="xxx"
   ```
 
--  Run the installer
+## Run Installer
 
-  ```sh
-  ./local-install.sh
-  ```
+```sh
+./local-install.sh
+```
