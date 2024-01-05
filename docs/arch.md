@@ -15,4 +15,4 @@ Imagine a central data platform residing in the Kubernetes cluster, acting as th
 
 ## How does it all fit together?
 
-![The BACK Stack Flow](back-stack-arch.svg){ align=center }
+![The BACK Stack Flow](static/back-stack-arch.svg){ align=center }
