@@ -48,6 +48,8 @@ theme:
   palette:
   - media: "(prefers-color-scheme: light)" # Light mode
     scheme: default
+    primary: light blue
+    accent: indigo
     toggle:
       icon: material/lightbulb-outline
       name: Switch to light mode
