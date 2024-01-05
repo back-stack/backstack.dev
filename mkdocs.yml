@@ -11,12 +11,13 @@ repo_url: https://github.com/back-stack/
 edit_uri: backstack.dev/edit/main/docs/
 
 # copyright
-copyright: Made with ❤️ by The BACK stack contributors
+copyright: Made with ❤️ by The BACK stack contributors. Together, let's unlock the future of platform engineering.
 
 # strictness
 strict: true
 
 # style
+# Commented due to 404 errors, need to fix
 # extra_css:
 # - static/extra.css
 
@@ -47,16 +48,16 @@ theme:
   palette:
   - media: "(prefers-color-scheme: light)" # Light mode
     scheme: default
-    toggle:
-      icon: material/lightbulb-outline
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: dark)" # Dark mode
-    scheme: slate
-    primary: light blue
-    accent: indigo
-    toggle:
-      icon: material/lightbulb
-      name: Switch to dark mode
+#     toggle:
+#       icon: material/lightbulb-outline
+#       name: Switch to light mode
+#   - media: "(prefers-color-scheme: dark)" # Dark mode
+#     scheme: slate
+#     primary: light blue
+#     accent: indigo
+#     toggle:
+#       icon: material/lightbulb
+#       name: Switch to dark mode
 
 plugins:
 - search
@@ -96,3 +97,8 @@ markdown_extensions:
 - pymdownx.tasklist:
     custom_checkbox: true
 - footnotes
+
+nav:
+- Introduction:
+    - index.md
+    - Architecture: arch.md
