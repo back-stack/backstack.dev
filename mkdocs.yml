@@ -25,6 +25,11 @@ strict: true
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/back-stack/
+    - icon: fontawesome/brands/slack
+      link: https://cloud-native.slack.com/archives/C066BJRLS4B
 
 theme:
   name: material
