@@ -54,14 +54,14 @@ theme:
     primary: light blue
     accent: light blue
     toggle:
-      icon: material/lightbulb-outline
+      icon: material/toggle-switch
       name: Switch to light mode
   - media: "(prefers-color-scheme: dark)" # Dark mode
     scheme: slate
     primary: light blue
     accent: light blue
     toggle:
-      icon: material/lightbulb
+      icon: material/toggle-switch-off
       name: Switch to dark mode
   favicon: static/back-stack-favicon.png
   icon:
