@@ -30,8 +30,6 @@ theme:
   name: material
   custom_dir: docs/overrides
   language: en
-  #logo: static/kyverno-json-logo.png
-  #favicon: static/favicon.ico
   include_search_page: false
   search_index_only: true
   features:
@@ -60,6 +58,9 @@ theme:
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
+  favicon: static/back-stack-favicon.png
+  icon:
+    logo: octicons/stack-24
 
 plugins:
 - search
