@@ -117,8 +117,7 @@ markdown_extensions:
 
 nav:
 - Home: index.md
-- Introduction:
+- Documentation:
     - intro.md
     - Quickstart: install.md
     - Architecture: arch.md
-- Quickstart: install.md
