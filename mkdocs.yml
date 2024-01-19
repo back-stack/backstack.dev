@@ -78,6 +78,16 @@ theme:
 
 plugins:
 - search
+- blog:
+    enabled: true
+    post_readtime: true
+    blog_toc: true
+    draft: false
+- rss:
+    enabled: !ENV [MKDOCS_ENABLE_RSS_PLUGIN, True]
+    match_path: blog/posts/.*
+    date_from_meta:
+      as_creation: date
 - minify:
     minify_html: true
 - include-markdown
@@ -108,3 +118,5 @@ nav:
     - intro.md
     - Quickstart: install.md
     - Architecture: arch.md
+- News:
+  - blog/index.md
