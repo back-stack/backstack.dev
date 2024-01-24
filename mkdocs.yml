@@ -118,5 +118,6 @@ nav:
     - intro.md
     - Quickstart: install.md
     - Architecture: arch.md
+    - Development: development.md
 - News:
   - blog/index.md
