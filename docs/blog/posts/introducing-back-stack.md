@@ -5,7 +5,6 @@ authors:
   - ritesh
   - morey
   - murph
-draft: true
 ---
 
 # Getting Started with BACK Stack: Revolutionizing Platform Engineering
