@@ -1,9 +1,17 @@
 authors:
   boris:
     name: Boris Kurktchiev
-    description: Chief Plumber
+    description: Chief Plumber @ Nirmata
     avatar: https://avatars.githubusercontent.com/u/5804477?v=4
   ritesh:
     name: Ritesh Patel
-    description: Founder Nirmata.com
+    description: Founder @ Nirmata
     avatar: https://avatars.githubusercontent.com/u/3522560?v=4
+  morey:
+    name: Nicholas Morey
+    description: Developer Advocate @ Akuity
+    avatar: https://avatars.githubusercontent.com/u/4213435?v=4
+  murph:
+    name: David Murphy
+    description: Open Source Architect @ Upbound
+    avatar: https://avatars.githubusercontent.com/u/727304?v=4
