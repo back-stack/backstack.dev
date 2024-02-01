@@ -25,6 +25,9 @@ strict: true
 extra:
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-MX73LDK951
   status:
     new: Recently added
     deprecated: Deprecated
