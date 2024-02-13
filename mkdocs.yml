@@ -61,66 +61,66 @@ theme:
     - toc.follow
 
   palette:
-  - media: "(prefers-color-scheme: light)" # Light mode
-    scheme: default
-    primary: light blue
-    accent: light blue
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: dark)" # Dark mode
-    scheme: slate
-    primary: light blue
-    accent: light blue
-    toggle:
-      icon: material/toggle-switch-off
-      name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)" # Light mode
+      scheme: default
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)" # Dark mode
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to dark mode
   favicon: static/back-stack-favicon.png
   icon:
     logo: octicons/stack-24
 
 plugins:
-- search
-- blog:
-    enabled: true
-    post_readtime: true
-    blog_toc: true
-    draft: false
-- rss:
-    enabled: !ENV [MKDOCS_ENABLE_RSS_PLUGIN, True]
-    match_path: blog/posts/.*
-    date_from_meta:
-      as_creation: date
-- minify:
-    minify_html: true
-- include-markdown
+  - search
+  - blog:
+      enabled: true
+      post_readtime: true
+      blog_toc: true
+      draft: false
+  - rss:
+      enabled: !ENV [MKDOCS_ENABLE_RSS_PLUGIN, True]
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+  - minify:
+      minify_html: true
+  - include-markdown
 # - tags:
 #     enabled: true
 #     tags_file: catalog/index.md
 
 markdown_extensions:
-- attr_list
-- pymdownx.emoji:
-    emoji_index: !!python/name:material.extensions.emoji.twemoji
-    emoji_generator: !!python/name:material.extensions.emoji.to_svg
-- admonition
-- codehilite
-- footnotes
-- meta
-- toc:
-    permalink: true
-- pymdownx.tabbed:
-    alternate_style: true
-- pymdownx.superfences
-- pymdownx.tasklist:
-    custom_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
-- Home: index.md
-- Documentation:
-    - intro.md
-    - Quickstart: install.md
-    - Architecture: arch.md
-    - Development: development.md
-- News:
-  - blog/index.md
+  - Home: index.md
+  - Documentation:
+      - intro.md
+      - Quickstart: install.md
+      - Architecture: arch.md
+      - Development: development.md
+  - Blog:
+      - blog/index.md
