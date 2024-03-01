@@ -15,7 +15,7 @@ Credentials:
 | Name              | Description                                            | Required | Comments                                           |
 | ----------------- | ------------------------------------------------------ | -------- | -------------------------------------------------- |
 | aws-credentials   | Credentials to be used for Crossplane `provider-aws`   | false    | This should point to a copy of your `~/.aws/credentials` file |
-| azure-credentials | Credentials to be used for Crossplane `provider-azure` | false    |                                                    |
+| azure-credentials | Credentials to be used for Crossplane `provider-azure` | false    | Use `az ad sp create-for-rbac --sdk-auth --role Owner --scopes /subscriptions/$YOURSUBSCRIPTIONID > azure.json` |
 | github-token      | Github API token                                       | true     |                                                    |
 | kubeconfig        | kubeconfig to connect to non-local cluster             | false    | This should point to a kubeconfig for the cluster you want to install to. Ensure there is a valid long term authentication token stored in the file |
 | vault-token       | This should always be `root`                           | true     |                                                    |
