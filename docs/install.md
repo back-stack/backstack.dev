@@ -10,12 +10,40 @@ Credentials:
 
 **NOTE**: Although cloud provider credentials are not required, without them you cannot provision new clusters.
 
+How to generate Azure AKS `kubeconfig` file:
+
+```sh
+$ az aks get-credentials --name MyManagedCluster --resource-group MyResourceGroup --file kubeconfig-azure
+```
+
+How to generate AWS EKS `kubeconfig` file:
+
+```sh
+$ aws eks update-kubeconfig --region us-west-1 --name backstack-hub --kubeconfig kubeconfig-aws
+```
+
+How to generate Azure Credentials:
+
+```sh
+$ az ad sp create-for-rbac --sdk-auth --role Owner --scopes /subscriptions/$YOURSUBSCRIPTIONID > azure.json
+```
+
+How to pass AWS Credentials:
+**NOTE** Ensure you have stored your Key ID and Access Key in a file under the `default` heading (e.g.)
+
+```sh
+$ cat ~/.aws/credentials
+[default]
+aws_access_key_id = YOURKEYHERE
+aws_secret_access_key = YOURSECRETKEYHERE
+```
+
 ---
 
 | Name              | Description                                            | Required | Comments                                           |
 | ----------------- | ------------------------------------------------------ | -------- | -------------------------------------------------- |
-| aws-credentials   | Credentials to be used for Crossplane `provider-aws`   | false    | This should point to a copy of your `~/.aws/credentials` file |
-| azure-credentials | Credentials to be used for Crossplane `provider-azure` | false    | Use `az ad sp create-for-rbac --sdk-auth --role Owner --scopes /subscriptions/$YOURSUBSCRIPTIONID > azure.json` |
+| aws-credentials   | Credentials to be used for Crossplane `provider-aws`   | false    |                                                    |
+| azure-credentials | Credentials to be used for Crossplane `provider-azure` | false    |                                                    |
 | github-token      | Github API token                                       | true     |                                                    |
 | kubeconfig        | kubeconfig to connect to non-local cluster             | false    | This should point to a kubeconfig for the cluster you want to install to. Ensure there is a valid long term authentication token stored in the file |
 | vault-token       | This should always be `root`                           | true     |                                                    |
@@ -75,23 +103,7 @@ $ porter installations output show kubeconfig-external -i back-stack > ~/.kube/c
 -  local `kubeconfig` file to connect to the cluster
 
 1.  Install porter (see above)
-2.  Generate the credentials config, specifying the path to the `kubeconfig` file
-    1.  Generate an AWS kubeconfig file using the `aws` cli
-
-    ```sh
-    $ aws eks update-kubeconfig --region $YOUR-REGION --name $YOUR-EKS-CLUSTER --kubeconfig ~/.kube/config-porter
-    ```
-
-    2. During credentials generation please pass in the file path you chose in the above step (`~/.kube/config-porter`)
-    **NOTE** Ensure you have stored your Key ID and Access Key in a file under the `default` heading (e.g.)
-
-    ```sh
-    $ cat ~/.aws/credentials
-    [default]
-    aws_access_key_id = YOURKEYHERE
-    aws_secret_access_key = YOURSECRETKEYHERE
-    ```
-    During credentials generation, please pass the file in as a File Path
+2.  Generate the credentials config, specifying the path to the `kubeconfig-aws` file
 
     ```sh
     $ porter credentials generate back-stack-cloud-creds --reference ghcr.io/back-stack/showcase-bundle:latest
