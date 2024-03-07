@@ -19,10 +19,10 @@ The concept of [platform engineering](https://tag-app-delivery.cncf.io/whitepape
 
 ## The Components of BACK Stack
 
-**Backstage**: An extensible portal that centralizes access to essential tools, enhancing workflows and collaboration.
-**Argo CD**: Implements GitOps, automating continuous delivery and ensuring codebase synchronization.
-**Crossplane**: A universal control plane that streamlines infrastructure provisioning across multiple cloud providers.
-**Kyverno:** Integrates security into development by enforcing policies and automating governance.
+- **Backstage**: An extensible portal that centralizes access to essential tools, enhancing workflows and collaboration.
+- **Argo CD**: Implements GitOps, automating continuous delivery and ensuring codebase synchronization.
+- **Crossplane**: A universal control plane that streamlines infrastructure provisioning across multiple cloud providers.
+- **Kyverno:** Integrates security into development by enforcing policies and automating governance.
 
 ## The Need for a Reference Architecture
 
