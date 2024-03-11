@@ -126,6 +126,6 @@ $ porter installations output show kubeconfig-external -i back-stack > ~/.kube/c
 
     For this showcase, you can update `/etc/hosts`.
 
-[getporter]: https://getporter.org
+[getporter]: https://porter.sh/
 [alb-controller]: https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
 
